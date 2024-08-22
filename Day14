@@ -1,0 +1,10 @@
+ Number Complement
+https://leetcode.com/problems/number-complement/description/?envType=daily-question&envId=2024-08-22
+class Solution {
+ public:
+  int findComplement(long num) {
+    for (long i = 1; i <= num; i <<= 1)
+      num ^= i;
+    return num;
+  }
+};
